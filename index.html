@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel='icon' href='logoicon.png' type='image/png' />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link type="text/css" href="resources/css/styles.css" rel="stylesheet">
+        <title>Works by Bassel Koshak</title>
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    </head>
+    <body>
+        <script>
+            class tempScrollbox {
+                constructor() {
+                    this.scrollbarWidth = 0;
+
+                    this.measureScrollbarWidth();
+                }
+
+                measureScrollbarWidth() {
+                    let scrollbox = document.createElement("div");
+                    scrollbox.style.overflow = "scroll";
+                    document.body.appendChild(scrollbox);
+                    this.scrollbarWidth = scrollbox.offsetWidth - scrollbox.clientWidth;
+                    document.body.removeChild(scrollbox);
+                }
+            }
+            let scrollbox = new tempScrollbox();
+            let root = document.documentElement;
+            root.style.setProperty("--scrollbarWidth", scrollbox.scrollbarWidth + "px");
+
+            function changeScrollbarWidth() {
+                scrollbox = new tempScrollbox();
+                root.style.setProperty("--scrollbarWidth", scrollbox.scrollbarWidth + "px");
+                console.log("something happened")
+            }
+            document.body.onresize = function () {changeScrollbarWidth()};
+
+        </script>
+        <header class="siteHeader">
+            <div class="siteHeader__container">
+                <div class="siteHeader__navContainer">
+                    <h1 class="siteHeader__logo">
+                        <a href="/" class="siteHeader__logoLink">
+                            <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 6.473 6.473">
+                                <path fill="#ff4365" d="M2.684 4.926L4.23 6.472h2.244L3.241 3.235 6.472 0H4.228L2.684 1.546c.094.149.224.271.293.435a3.201 3.201 0 010 2.512c-.069.163-.199.285-.293.433z"/>
+                                <path style="line-height:normal;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1" fill="#0a0a0a" d="M0 0v1.506c.963 0 1.729.766 1.729 1.73 0 .965-.766 1.731-1.729 1.731v1.506a3.246 3.246 0 003.233-3.237A3.246 3.246 0 000 0z" color="#000" font-family="sans-serif" font-weight="400" overflow="visible"/>
+                            </svg>
+                        </a>
+                    </h1>
+                    <nav class="siteHeaderNav">
+                        <ul class="siteHeaderNav__list">
+                            <li class="siteHeaderNavItem">
+                                <button class="siteHeaderNavItem__link">About</button>
+                            </li>
+                            <li class="siteHeaderNavItem">
+                                <button class="siteHeaderNavItem__link">Portfolio</button>
+                            </li>
+                            <li>
+                                <button class="siteHeaderNavContact__link">Contact</button>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="siteHeaderMenu">
+                        <button class="siteHeaderMenuButton"><svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="10" width="20" height="2" rx="1" fill="white"/>
+                            <rect width="20" height="2" rx="1" fill="white"/>
+                            <rect y="5" width="20" height="2" rx="1" fill="white"/>
+                            </svg>
+                            </button>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="frontpage">
+            <div class="frontpage__container">
+                <div class="frontpage__layoutContainer">
+                    <div class="frontpage__layout">
+                        <h1 class="frontpageText">Hi, I'm Bassel Koshak.</h1>
+                        <h1 class="frontpageText">I make apps.<br></h1>
+                        <div>
+                            <div class="scrolldown">
+                            </div>
+                        </div> 
+                    </div>      
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="content__container">
+                <div class="content__layoutContainer">
+                </div>
+            </div>
+        </section>
+        <footer class="siteFooter">
+            t
+        </footer>
+    </body>
+</html>
