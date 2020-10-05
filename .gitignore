@@ -1,6 +1,7 @@
-/*
-!/resources/css/styles.css
-!/index.html
-!/logoicon.png
-!/CNAME
-!/README.md
+/node_modules
+/.vscode/
+package-lock.json
+bk.ico
+gulpfile.js
+httpserver.py
+/resources/css/styles.scss
