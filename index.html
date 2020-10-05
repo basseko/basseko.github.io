@@ -10,7 +10,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link type="text/css" href="resources/css/styles.css" rel="stylesheet">
         <title>Works by Bassel Koshak</title>
+        
     </head>
+    
+
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
     <body>
         <script>
             class tempScrollbox {
@@ -40,6 +44,7 @@
             document.body.onresize = function () {changeScrollbarWidth()};
 
         </script>
+        
         <header class="siteHeader">
             <div class="siteHeader__container">
                 <div class="siteHeader__navContainer">
@@ -96,7 +101,20 @@
             </div>
         </section>
         <footer class="siteFooter">
-            t
+            
         </footer>
+        <script>
+            window.onscroll = function() {stickyHeader()};
+            var header = document.getElementsByClassName("siteHeader")[0];
+            var stickyOffset = header.offsetTop;
+        
+            function stickyHeader() {
+                if (window.pageYOffset > stickyOffset) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+            </script>    
     </body>
 </html>

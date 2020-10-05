@@ -8,9 +8,9 @@
 --windowWidth: 100vw - var(--scrollbarWidth);
 --fontWeightNormal: 500;
 --fontWeightSemibold: 600;
---fontWeightBold: 900;
+--fontWeightBold: 800;
 --hoverTransition: 150ms cubic-bezier(0.22, 0.61, 0.36, 1);
---buttonColor: #0a0a0a;
+--buttonColor: #ff4365;
 --buttonTextColor: #ffffff;
 --buttonFont: var(--fontWeightBold) 16px var(--roboto);
   * {
@@ -64,8 +64,6 @@ html {
   }
 }
 
-
-
 body {
   font-family: var(--fontFamilySansSerif);
   color: var(--textColor);
@@ -81,7 +79,18 @@ body {
   left: 0;
   width: 100%;
   z-index: 100;
+  
+  
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #e7e7e7;
+}
+
 .siteHeader__container {
   position: relative;
   max-width: calc(var(--columnPaddingNormal) * 2 + var(--layoutWidth));
@@ -96,7 +105,7 @@ body {
   -webkit-box-align: center;
   align-items: center;
   min-height: 56px;
-  padding: 32px var(--columnPaddingNormal) 12px;
+  padding: 15px var(--columnPaddingNormal) 15px;
 }
 
 @media (min-width: 541px) {
@@ -148,7 +157,7 @@ body {
   cursor: pointer;
   background: var(--buttonColor);
   &:hover {
-    background: #3B3B3B;
+    background: #ff6984;
   }
 }
 
