@@ -1,6 +1,6 @@
-/node_modules
-/resources/css/styles.scss
-/gulpfile.js
-/httpserver.py
-/package-lock.json
-/bk.ico
+/*
+!/resources/css/styles.css
+!/index.html
+!/logoicon.png
+!/CNAME
+!/README.md
