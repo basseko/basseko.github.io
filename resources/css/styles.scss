@@ -1,22 +1,29 @@
 :root {
 --fontFamilySansSerif: "Manrope", -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", sans-serif;
 --roboto: "Roboto", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+--metropolis: "Metropolis", sans-serif;
 --titleColor: #0A0A0A;
 --textColor: #0A0A0A;
 --navColor: #0A0A0A;
 --scrollbarWidth: 0px;
 --windowWidth: 100vw - var(--scrollbarWidth);
---fontWeightNormal: 500;
---fontWeightSemibold: 600;
+--fontWeightNormal: 400;
+--fontWeightSemibold: 500;
 --fontWeightBold: 800;
 --hoverTransition: 150ms cubic-bezier(0.22, 0.61, 0.36, 1);
 --buttonColor: #ff4365;
 --buttonTextColor: #ffffff;
---buttonFont: var(--fontWeightBold) 16px var(--roboto);
+--buttonFont: var(--fontWeightSemibold) 16px var(--roboto);
   * {
     box-sizing: border-box;
   }
 }
+
+@font-face {
+  font-family: Metropolis;
+  src: url("fonts/Metropolis-Bold.woff2");
+}
+
 
 html {
   --layoutWidth: calc(100vw - var(--scrollbarWidth));
@@ -125,8 +132,7 @@ body {
 
 .siteHeaderNavItem__link {
   padding: 10px 8px;
-  font: var(--fontWeightBold) 16px var(--roboto);
-  letter-spacing: 0.025em;
+  font: var(--fontWeightSemibold) 16px var(--roboto);
   color: var(--navColor);
   cursor: pointer;
   -webkit-appearance: none;
@@ -146,7 +152,6 @@ body {
   margin: 0px 0px 0px 8px;
   border-radius: 16.5px;
   font: var(--buttonFont);
-  letter-spacing: 0.025em;
   color: var(--buttonTextColor); 
   white-space: nowrap;
   -webkit-transition: var(--hoverTransition);
@@ -218,7 +223,7 @@ a {
 }
 
 .frontpageText {
-  font: var(--fontWeightBold) calc(2.84vw + 17.36px) var(--roboto);
+  font: var(--fontWeightSemibold) calc(2.84vw + 17.36px) var(--metropolis);
 }
 
 .scrolldown {
