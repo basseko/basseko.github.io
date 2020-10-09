@@ -2,7 +2,6 @@
 
 <html lang="en">
     <head>
-        <link rel='icon' href='logoicon.png' type='image/png' />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="koshak.me — Works by Bassel Koshak">
         <meta name="robots" content="INDEX,FOLLOW">
@@ -49,6 +48,7 @@
                     <h1 class="siteHeader__logo">
                         <a href="/" class="siteHeader__logoLink">
                             <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 6.473 6.473">
+                                <title>Logo</title>
                                 <path fill="#ff4365" d="M2.684 4.926L4.23 6.472h2.244L3.241 3.235 6.472 0H4.228L2.684 1.546c.094.149.224.271.293.435a3.201 3.201 0 010 2.512c-.069.163-.199.285-.293.433z"/>
                                 <path style="line-height:normal;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1" fill="#0a0a0a" d="M0 0v1.506c.963 0 1.729.766 1.729 1.73 0 .965-.766 1.731-1.729 1.731v1.506a3.246 3.246 0 003.233-3.237A3.246 3.246 0 000 0z" color="#000" font-family="sans-serif" font-weight="400" overflow="visible"/>
                             </svg>
@@ -57,10 +57,10 @@
                     <nav class="siteHeaderNav">
                         <ul class="siteHeaderNav__list">
                             <li class="siteHeaderNavItem">
-                                <button class="siteHeaderNavItem__link">About</button>
+                                <a class="siteHeaderNavItem__link" href="#title">About</a>
                             </li>
                             <li class="siteHeaderNavItem">
-                                <button class="siteHeaderNavItem__link">Portfolio</button>
+                                <a class="siteHeaderNavItem__link">Portfolio</a>
                             </li>
                             <li>
                                 <a href="mailto:be@koshak.net" class="siteHeaderNavContact__link">Contact</a>
@@ -68,7 +68,7 @@
                         </ul>
                     </nav>
                     <nav class="siteHeaderMenu">
-                        <button class="siteHeaderMenuButton"><svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <button class="siteHeaderMenuButton" title="Open mobile navigation"><svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect y="10" width="20" height="2" rx="1" fill="white"/>
                             <rect width="20" height="2" rx="1" fill="white"/>
                             <rect y="5" width="20" height="2" rx="1" fill="white"/>
@@ -83,18 +83,41 @@
                 <div class="frontpage__layoutContainer">
                     <div class="frontpage__layout">
                         <h1 class="frontpageText">Hi, I'm Bassel Koshak.</h1>
-                        <h1 class="frontpageText">I design apps.<br></h1>
+                        <h1 class="frontpageText">I design apps.</h1>
                         <div>
-                            <div class="scrolldown">
-                            </div>
+                            <div class="scrolldown"></div>
                         </div> 
                     </div>      
                 </div>
             </div>
         </section>
-        <section class="content">
-            <div class="content__container">
-                <div class="content__layoutContainer">
+        <section class="about">
+            <div class="about__container">
+                <div class="about__layoutContainer">
+                    <div class="columnLayout" columns="2,2">
+                        <div class="personalbranding">
+                            <div class="logoCircle">
+                                <svg class="largeLogo" xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 6.473 6.473">
+                                    <path fill="#ff4365" d="M2.684 4.926L4.23 6.472h2.244L3.241 3.235 6.472 0H4.228L2.684 1.546c.094.149.224.271.293.435a3.201 3.201 0 010 2.512c-.069.163-.199.285-.293.433z"/>
+                                    <path style="line-height:normal;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1" fill="#0a0a0a" d="M0 0v1.506c.963 0 1.729.766 1.729 1.73 0 .965-.766 1.731-1.729 1.731v1.506a3.246 3.246 0 003.233-3.237A3.246 3.246 0 000 0z" color="#000" font-family="sans-serif" font-weight="400" overflow="visible"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="aboutText">
+                            <h2 id="title">Creative Developer</h2>
+                            <p class="description">I’m a software developer focusing on the front-end, with a passion for user interface design.</p>
+                            <div class="locationContainer">
+                                <p class="location">
+                                <span class="work"><svg class="workIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.5 24.5886"><g fill="none" stroke="#ffffff" stroke-width="2.5" transform="translate(-40.0439 -75.7374)"><rect width="24" height="18" x="41.2939" y="-99.076" stroke-linejoin="round" ry="0" transform="scale(1 -1)"/><rect width="9.1178" height="4.0574" x="48.735" y="76.9874" stroke-linejoin="round" ry="0"/><path d="M41.2939 92.8876h24"/><path stroke-linecap="round" stroke-linejoin="round" d="M50.5532 89.0177h5.4814"/></g></svg>
+                                CS Undergraduate at KFUPM</span>
+                                <span class="area">
+                                    <span class="bullet">•</span><svg class="locationIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.6821 31.7808"><path fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.499963504" d="M12.3408 1.25A11.091 11.091 0 001.25 12.3413a11.091 11.091 0 002.4862 6.9975l8.6046 11.1921 8.6041-11.1916a11.091 11.091 0 002.4872-6.998A11.091 11.091 0 0012.3408 1.25zm0 6.5474a4.3431 4.5436 0 014.3434 4.544 4.3431 4.5436 0 01-4.3434 4.5433 4.3431 4.5436 0 01-4.3429-4.5434 4.3431 4.5436 0 014.3429-4.5439z"/></svg>
+                                Dhahran, KSA 
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
