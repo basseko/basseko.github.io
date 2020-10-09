@@ -1,7 +1,9 @@
 /node_modules
-/.vscode
+/.vscode/
 package-lock.json
 bk.ico
 gulpfile.js
 httpserver.py
 /resources/css/styles.scss
+webcalc.py
+/.vscode/tasks.json
